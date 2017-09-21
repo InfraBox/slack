@@ -1,7 +1,7 @@
-FROM alpine:3.4
+FROM alpine:3.6
 
 RUN apk add --no-cache python py-requests
 
-COPY slack.py slack.py
+COPY slack.py /slack.py
 
-CMD python slack.py
+CMD python /slack.py

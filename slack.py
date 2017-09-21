@@ -11,6 +11,7 @@ def main():
         print 'Local job, not sending message'
         return
 
+    print json.dumps(job, indent=4)
     if "SLACK_WEBHOOK_URL" not in os.environ:
         print "SLACK_WEBHOOK_URL not set"
         sys.exit(1)
