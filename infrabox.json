@@ -7,7 +7,7 @@
         "build_only": false,
         "resources": { "limits": { "cpu": 1, "memory": 1024 }},
         "environment": {
-            "SLACK_WEBHOOK_URL": { "$ref": "SLACK_WEBHOOK_URL" }
+            "SLACK_WEBHOOK_URL": { "$secret": "SLACK_WEBHOOK_URL" }
         }
     }]
 }
